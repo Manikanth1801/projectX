@@ -1,0 +1,43 @@
+.features {
+  width: 100%;
+  background-color: #1e1021;
+  padding: 36px 120px;
+}
+
+.features > h2 {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+}
+.feature-img {
+  width: 100%;
+}
+
+.feature-grid {
+  margin-top: 24px !important;
+}
+
+.feature-content {
+  margin-top: 24px;
+  color: #ffffff;
+  line-height: 24px;
+}
+
+.feature-content h3,
+p {
+  letter-spacing: 1px;
+}
+.feature-content p {
+  margin-top: 8px;
+  font-weight: 500;
+}
+.feature-content:nth-child(2) {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .features {
+    padding: 2rem;
+  }
+}

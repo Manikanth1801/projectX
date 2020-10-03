@@ -1,0 +1,11 @@
+.Courses {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Courses > h2 {
+  margin: 24px 0;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #1e1021;
+}

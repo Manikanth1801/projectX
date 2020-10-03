@@ -1,0 +1,24 @@
+.AboutTeam {
+  background-color: #1e1021;
+  width: 100%;
+  padding: 36px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.AboutTeam h1 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.AboutTeam p {
+  margin-bottom: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.team-container {
+  width: 80%;
+  margin: auto;
+}

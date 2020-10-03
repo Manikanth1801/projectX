@@ -1,0 +1,94 @@
+footer {
+  /* background-color: #1e1021; */
+  width: 100%;
+  padding: 36px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: #1e1021;
+}
+
+.footer-left {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-left > h1 {
+  letter-spacing: 1px;
+  color: #1e1021;
+}
+
+.footer-left > h1 span {
+  color: #f00946;
+}
+
+.footer-links {
+  margin: 16px 0;
+}
+
+.footer-links a {
+  color: rgb(53, 51, 51);
+}
+
+.footer-links a:hover {
+  border-bottom: 1px solid #f00946;
+}
+
+.footer-company-name {
+  color: rgb(131, 129, 127);
+  font-style: italic;
+}
+
+.footer-center {
+  flex: 0.3;
+}
+
+.footer-center-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0;
+  color: #1e1021;
+}
+
+.footer-center-icon {
+  margin-right: 8px;
+}
+
+.footer-right {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-icons {
+  display: flex;
+  margin-top: 16px;
+}
+.footer-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 24px;
+  background-color: #1e1021;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 960px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-center {
+    margin: 16px 0;
+  }
+}
