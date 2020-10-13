@@ -39,7 +39,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: rgba(7, 36, 131, 0.405);
   justify-self: start;
   cursor: pointer;
   text-decoration: none;

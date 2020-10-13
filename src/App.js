@@ -10,18 +10,20 @@ import AboutTeam from "./pages/AboutTeam/AboutTeam";
 import CourseSection from "./pages/CourseSection/CourseSection";
 
 import {Route, Switch} from "react-router";
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-     
-      <Home />
-      <CourseSection/>
-      <Features />
-      <AboutTeam />
-      <ContactUs />
+      <BrowserRouter>
+        <Navbar />
+        <Home />
+        <CourseSection/>
+        <Features />
+        <AboutTeam />
+        <ContactUs />
+      </BrowserRouter>
     </div>
   );
 }
