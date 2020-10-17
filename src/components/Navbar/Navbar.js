@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { AiFillCodepenCircle } from "react-icons/ai";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -35,7 +36,7 @@ function Navbar() {
   window.addEventListener("scroll", changeBackground);
   return (
     <>
-      <div className={navbar ? "navbar active" : "navbar"}>
+      <div className={navbar ? "navbar active" : "navbar"} id="home">
         <div className="navbar-container container">
           <a
             href="/"
@@ -55,24 +56,24 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="foundationCourses" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 Courses
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="developmentCourses" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 ProjectX
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="aboutUs" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="contactUs" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 Contact Us
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-btn">
               {button ? (

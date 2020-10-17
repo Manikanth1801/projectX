@@ -1,0 +1,23 @@
+.course-details{
+    width: 100%;
+    outline: 1px solid red;
+    min-height: 100vh;
+}
+
+.course-detailsHero{
+    width: 100%;
+    background: url(/assets/courseHeroImg.png) no-repeat ;
+    background-size: cover;
+    height: auto;
+}
+
+.courseHeroContent{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.heroLeft{
+    height: auto !important;
+}

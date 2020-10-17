@@ -11,6 +11,7 @@ import CourseSection from "./pages/CourseSection/CourseSection";
 
 import {Route, Switch} from "react-router";
 import { BrowserRouter } from "react-router-dom";
+import CourseDetails from "./pages/CourseDescription/CourseDetails";
 
 
 function App() {
@@ -18,10 +19,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Home />
+        {/* <Home />
         <CourseSection/>
         <Features />
-        <AboutTeam />
+        <AboutTeam /> */}
+       
+        <CourseDetails/>
         <ContactUs />
       </BrowserRouter>
     </div>

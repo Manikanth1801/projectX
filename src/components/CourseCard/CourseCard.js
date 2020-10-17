@@ -1,6 +1,7 @@
 import React from "react";
 import "./CourseCard.css";
 import Button from "../Button/Button";
+import {Link} from 'react-router-dom';
 
 
 function CourseCard({ image, title }) {
@@ -8,9 +9,12 @@ function CourseCard({ image, title }) {
     <div style={cardStyle} className="CourseCard">
       <img className="CourseCard-img" src={image} alt="image here" />
       <h3 className="CourseCard-title">{title}</h3>
-        <Button buttonStyle="btn--primary" buttonColor="primary">
+      <Link to="course-description">
+      <Button buttonStyle="btn--primary" buttonColor="primary">
             Enroll Now
         </Button>
+      </Link>
+       
     </div>
   );
 }

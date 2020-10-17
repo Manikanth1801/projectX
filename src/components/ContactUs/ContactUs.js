@@ -9,10 +9,11 @@ import {
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa";
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function ContactUs() {
   return (
-    <div>
+    <div id="contactUs">
       <hr />
       <footer class="footer">
         <div class="footer-left">
@@ -57,6 +58,7 @@ function ContactUs() {
           </p>
 
           <div class="footer-icons">
+            
             <a href="/">
               <FaFacebook />
             </a>
@@ -69,6 +71,7 @@ function ContactUs() {
             <a href="/">
               <FaGithub />
             </a>
+          
           </div>
         </div>
       </footer>

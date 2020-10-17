@@ -3,11 +3,11 @@ import "./Courses.css";
 import { Grid } from "@material-ui/core";
 import CourseCard from "../../components/CourseCard/CourseCard";
 
-function Courses({ courseList, title }) {
+function Courses({ courseList, title, sectionid }) {
   const [courses] = useState(courseList);
   return (
-    <div className="Courses">
-      <h1 style={titleStyle}>{title}</h1>
+    <div className="Courses" id={sectionid}>
+      <h1  style={titleStyle}>{title}</h1>
       <Grid container spacing={3}>
         {courses.map((course) => {
           return (

@@ -13,7 +13,7 @@ const teams = [
 
 function AboutTeam() {
   return (
-    <div className="AboutTeam">
+    <div className="AboutTeam" id="aboutUs">
       <h1>Who are we ?</h1>
       <p>
       Proinsite is one of the largest online tech education company in India, focusing on courses on C++, Java, Python, Android, Machine Learning, Data science, WebDev, interview prep, tech aptitude etc. 
