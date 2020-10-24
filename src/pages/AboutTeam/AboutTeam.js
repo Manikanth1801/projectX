@@ -6,8 +6,20 @@ import TeamCard from "../../components/TeamCard/TeamCard";
 const teams = [
   {
     url:
-      "https://avatars2.githubusercontent.com/u/37298575?s=460&u=544b6cb43df10b450a5fbf99175fb962068a9dff&v=4",
+      "Ritik",
     name: "Ritik Kumar",
+  },
+
+  {
+    url:
+      "cmo",
+    name: "Xyz Name",
+  },
+
+  {
+    url:
+      "sachin",
+    name: "Sachin Mali",
   }
 ];
 

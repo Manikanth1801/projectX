@@ -3,47 +3,52 @@ import Courses from "../Courses/Courses";
 
 const foundationCourses = [
   {
-    image: "c",
+    
+    image: "C",
     title: "C Programming",
   },
   {
-    image: "c++",
+    image: "CPP",
     title: "C++",
   },
   {
-    image: "java",
+    image: "Java",
     title: "Java",
   },
   {
-    image: "python",
+    image: "Python",
     title: "Python",
   },
 ];
 
 const developmentCourses = [
   {
-    image: "android",
+    image: "Android",
     title: "Android Application Development",
   },
   {
-    image: "full_stack",
+    image: "FullStack",
     title: "Full Stack Development",
   },
   {
-    image: "frontend",
+    image: "Frontend",
     title: "Frontend Development",
   },
   {
-    image: "backend",
+    image: "Backend",
     title: "Backend Development",
   },
 ];
 
 const coreComputerScienceCourses = [
   {
-    image: "data_structure",
+    image: "DSA",
     title: "Data Structures and Algorithms",
   },
+  {
+    image: "SystemDesign",
+    title: "System Design"
+  }
 ];
 
 function CourseSection() {

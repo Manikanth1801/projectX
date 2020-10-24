@@ -1,23 +1,67 @@
-.course-details{
-    width: 100%;
-    outline: 1px solid red;
-    min-height: 100vh;
-}
-
-.course-detailsHero{
+.coursedetailsHero{
     width: 100%;
     background: url(/assets/courseHeroImg.png) no-repeat ;
     background-size: cover;
-    height: auto;
+    height: 40vh;
+}
+@media(max-width:550px){
+    .coursedetailsHero{
+        height: 100vh;
+        margin: 10px;
+    }
+    .heroBtn{
+        width:70%;
+    }
+    
 }
 
-.courseHeroContent{
+.heroContent{
     display: flex;
+    margin: 20px;
     justify-content: left;
     align-items: center;
 }
 
-
 .heroLeft{
-    height: auto !important;
+    margin: 20px;
 }
+
+@media(max-width:550px){
+    .benifitCard{
+        margin-top: 10px;
+    }
+
+}
+.priceCard{
+    margin-top: 20px;
+    margin-left: none;
+}
+
+/* feedback card */
+
+#testimonials .card {
+    border: 0;
+}
+
+.card {
+    text-align: center;
+    border: none;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 9rem;
+    max-height: 9rem;
+    margin: 0 auto;
+}
+
+._tm-user-role {
+    font-weight: bold;
+}
+
+._tm-header {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+/* feedback card end */

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { FaSearch } from "react-icons/fa";
+import Carousel from './Carousel/carousel';
 import Card from "./Card/Card";
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
           url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTb-pGFkk0m-FQxmA6wOPXJWh47rBRWF_972Q&usqp=CAU"
         />
       </div>
+      <Carousel></Carousel>
     </div>
   );
 }

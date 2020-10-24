@@ -10,23 +10,48 @@ import AboutTeam from "./pages/AboutTeam/AboutTeam";
 import CourseSection from "./pages/CourseSection/CourseSection";
 
 import {Route, Switch} from "react-router";
-import { BrowserRouter } from "react-router-dom";
 import CourseDetails from "./pages/CourseDescription/CourseDetails";
 
+const componentRender = () => {
+  return (
+    <div>
+        <Home />
+        <CourseSection/>
+        <Features />
+        <AboutTeam />
+    </div>
+  );
+}
+const Error = () => {
+  return(
+    <div>
+      <Home />
+      <CourseSection/>
+      <Features />
+      <AboutTeam />
+    </div >
+  );
+
+}
+const CoursePageRender = () => {
+  return (
+    <div>
+      <CourseDetails ></CourseDetails>
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        {/* <Home />
-        <CourseSection/>
-        <Features />
-        <AboutTeam /> */}
-       
-        <CourseDetails/>
-        <ContactUs />
-      </BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={componentRender} />
+        <Route exact path="/courseDescription" component={CourseDetails}/>
+        <Route component={Error} />        
+      </Switch>
+      <ContactUs />
+
     </div>
   );
 }

@@ -7,7 +7,9 @@ import {
   FaGithub,
   FaMapMarker,
   FaEnvelope,
+  FaInstagram,
   FaPhone,
+  FaYoutube
 } from "react-icons/fa";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -25,6 +27,7 @@ function ContactUs() {
             <a href="/">Home</a> · <a href="/">Blog</a> · <a href="/">About</a>{" "}
             · <a href="/">Contact</a>
           </p>
+          
 
           <p class="footer-company-name">proinsite &copy; 2019</p>
         </div>
@@ -33,24 +36,36 @@ function ContactUs() {
           <div className="footer-center-info">
             <FaMapMarker className="footer-center-icon" />
             <p>
-              <span>21 Revolution Street</span> Delhi, India
+              <span>Ambad link roda, nashik</span> Maharashtra 422010
             </p>
           </div>
 
           <div className="footer-center-info">
             <FaPhone className="footer-center-icon" />
-            <p>+1 555 123456</p>
+            <p>+91 7972902094</p>
           </div>
 
           <div className="footer-center-info">
             <FaEnvelope className="footer-center-icon" />
             <p>
-              <a href="mailto:support@company.com">contact@proinsite.com</a>
+              <a href="mailto:support@company.com">support@proinsite.in</a>
             </p>
           </div>
+
+          
         </div>
 
+        
+
         <div class="footer-right">
+
+        <div className="footer-center-info">
+            <FaEnvelope className="footer-center-icon" />
+            <p>
+              <a href="mailto:info@company.com">info@proinsite.in</a>
+            </p>
+          </div>
+
           <p class="footer-company-about">
             <span>About the company</span>
             ProInSite is a blog for web designers, graphic designers, web
@@ -59,18 +74,18 @@ function ContactUs() {
 
           <div class="footer-icons">
             
-            <a href="/">
-              <FaFacebook />
+            <a href="https://www.instagram.com/proinsite_edutek/?r=nametag" target="_blank">
+              <FaInstagram />
             </a>
-            <a href="/">
-              <FaTwitter />
+            <a href="https://www.youtube.com/channel/UCG4WwnzzCQ3fibwPy1wusqQ" target="_blank">
+              <FaYoutube />
             </a>
-            <a href="/">
+            <a href="https://www.linkedin.com/in/proinsite-edutek-7b7ab31b5/" target="_blank">
               <FaLinkedin />
             </a>
-            <a href="/">
+            {/* <a href="/">
               <FaGithub />
-            </a>
+            </a> */}
           
           </div>
         </div>
