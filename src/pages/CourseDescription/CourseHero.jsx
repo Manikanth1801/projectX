@@ -40,9 +40,9 @@ const CourseHero=(props)=> {
             <div className="row">
               <div className="courseFetures col-xs-12 col-sm-12 col-md-7 col-lg-7">
                 <h3>{props.features.courseName} <strong style={{ borderBottom: "1px solid darkred" }}>Features</strong> in <span style={{ color: "#012971" }}>Proinsite</span></h3>
-                <div className="row mt-3">
-                  <div className="col-sm-12 col-md-6 col-lg-6 ">
-                    <span>{props.features.feature1} </span>
+                <div className="row mt-3" style={{fontSize:"medium"}}>
+                  <div className="col-sm-12 col-md-6 col-lg-6 " >
+                    <span >{props.features.feature1} </span>
                   </div>
                   <div className="col-sm-12 col-md-6 col-lg-6">
                     <span>{props.features.feature2}</span>
@@ -87,7 +87,7 @@ const CourseHero=(props)=> {
                 
               </div> */}
             </div>
-            {/* <div className="row benifits my-5">
+            <div className="row benifits my-5">
               <div className="col-sm-12 col-md-12 col-lg-12">
               <h3>
                 Benifits
@@ -97,20 +97,25 @@ const CourseHero=(props)=> {
               iure nam animi. Nemo, possimus quia.</p>
               </div>
               
-              <div className="col-sm-12 col-md-3 col-lg-3 benifitCard">
-                <BenifitCard></BenifitCard>
+              {/* <div className="col-sm-12 col-md-3 col-lg-3 benifitCard">
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
-              <BenifitCard></BenifitCard>
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
-              <BenifitCard></BenifitCard>
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
-              <BenifitCard></BenifitCard>
-              </div>
+              </div> */}
               
-            </div> */}
+              <BenifitCard ></BenifitCard>
+
+              <BenifitCard ></BenifitCard>
+
+              <BenifitCard ></BenifitCard>
+
+              <BenifitCard ></BenifitCard>
+
+              
+            </div>
 
             <div className="aboutCourse ">
               <div className="row">
@@ -135,9 +140,9 @@ const CourseHero=(props)=> {
             {/* <div className="col-sm-12 col-md-12 col-lg-12 pricing">
              <PriceCard></PriceCard>
             </div> */}
-            <div className="col-sm-12 col-md-12 col-lg-12 my-5 feedback" style={{marginTop:"40px"}}>
+            {/* <div className="col-sm-12 col-md-12 col-lg-12 my-5 feedback" style={{marginTop:"40px"}}>
             <FeedbackCard triCard={props.triCard}> </FeedbackCard>
-            </div>
+            </div> */}
             
             
              

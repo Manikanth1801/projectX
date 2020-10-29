@@ -48,7 +48,7 @@ export default function ItenaryTables() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="itenaryTable">
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>

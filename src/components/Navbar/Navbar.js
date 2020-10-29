@@ -43,7 +43,8 @@ function Navbar() {
             className={navbar ? "navbar-logo active" : "navbar-logo"}
             onClick={closeMobileMenu}
           >
-            <AiFillCodepenCircle className="navbar-icon" />
+            {/* <AiFillCodepenCircle className="navbar-icon" /> */}
+            <img className="icon" src="/assets/images/proinsiteLogo.svg" alt="logo"/>
             Pro<span>In</span>Site
           </a>
           <div className="menu-icon" onClick={handleClick}>
@@ -60,11 +61,11 @@ function Navbar() {
                 Courses
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="developmentCourses" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 ProjectX
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link to="aboutUs" smooth={true} offset={-100} duration={1000} className="nav-links" onClick={closeMobileMenu}>
                 About

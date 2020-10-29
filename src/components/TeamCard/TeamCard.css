@@ -14,14 +14,23 @@
 }
 
 .TeamCard-image {
-  
+
   width: 100%;
   height:200px;
   border-radius: 50%;
   border: 4px solid #1e1021;
   margin-bottom: 12px;
+  object-position: center;
   object-fit: cover;
 }
+/* @media screen and (max-width:"780px"){
+  .TeamCard-image {
+
+    width: 100%;
+    height:400px;
+  }
+    
+} */
 
 .TeamCard:hover {
   transform: translateY(-10px);

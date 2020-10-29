@@ -61,8 +61,8 @@ export default function CourseItenary() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Comming Soon told so!
-            {/* <ItenaryTables></ItenaryTables> */}
+            {/* Comming Soon told so! */}
+            <ItenaryTables></ItenaryTables>
           </Typography>
         </AccordionDetails>
       </Accordion>

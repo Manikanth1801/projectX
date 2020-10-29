@@ -3,7 +3,7 @@ import "./TeamCard.css";
 
 function TeamCard({ url, name }) {
   return (
-    <div className="TeamCard offset-7">
+    <div className="TeamCard">
       <img src={`/assets/images/teamMembers/${url}.jpg`} alt={url} className="TeamCard-image" />
       <h3>{name}</h3>
     </div>

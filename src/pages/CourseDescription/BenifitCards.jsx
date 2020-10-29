@@ -28,8 +28,9 @@ export default function BenifitCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card align="center" className={classes.root} variant="outlined">
-      <CardContent>
+    <div className="benifitCard">
+      <Card align="center" className={classes.root} variant="outlined">
+      <CardContent >
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Benifit one
         </Typography>
@@ -49,5 +50,7 @@ export default function BenifitCard() {
         <Button size="small">Learn More</Button>
       </CardActions> */}
     </Card>
+    </div>
+    
   );
 }

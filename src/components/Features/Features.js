@@ -1,21 +1,30 @@
 import React from "react";
 import "./Features.css";
 import Grid from "@material-ui/core/Grid";
+import BenifitCard from "../../pages/CourseDescription/BenifitCards";
+import { Typography } from "@material-ui/core";
 
 function Features() {
   return (
-    <div className="features">
-      <h2>Why ProInsite ?</h2>
+    <div className="features" style={{margin:"20px"}}>
+      <center><h1>Why ProInsite ?</h1></center>
       <Grid className="feature-grid" container spacing={3}>
-        <Grid alignItems="center" justify="center" item xs={12} sm={6}>
-          <img
-            src="/assets/images/features.jpg"
-            alt=""
-            className="feature-img"
-          />
+        <Grid alignItems="center" justify="center" item xs={12} sm={12} md={4} lg={4}>
+          <h2 className="text-center">
+            Learning academics
+          </h2>
+          <Typography>
+          gain mastery over markets that empowers people to be more self sufficient allowing the pursuit of a passionate, fulfilling and purpose driven life.
+          </Typography>
         </Grid>
-        <Grid item xs={12} md={6} sm={12}>
-          <div className="feature-content">
+        <Grid alignItems="center" justify="center" item xs={12} sm={12} md={4} lg={4}>
+          <h2 className="text-center">
+            Live mentorship
+          </h2>
+        <Typography>
+        accelerate your growth and achieve excellence with exclusive goLIVE training from a team of master educators committed to your success.
+        </Typography>
+          {/* <div className="feature-content">
             <h3>Discussion Forums</h3>
             <p>
               Now you can ask questions and discuss your problems with
@@ -30,7 +39,15 @@ function Features() {
               completion of course. Certifications are verified and maintained
               by LearnCodeOnline
             </p>
-          </div>
+          </div> */}
+        </Grid>
+        <Grid alignItems="center" justify="center" item xs={12} sm={12} md={4} lg={4}>
+          <h2 className="text-center">
+            Startegies
+          </h2>
+          <Typography>
+          expand your learning and mentorship with simple unique strategies that can make it much easier too
+          </Typography>
         </Grid>
       </Grid>
     </div>

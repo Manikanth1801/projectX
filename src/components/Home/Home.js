@@ -3,6 +3,17 @@ import "./Home.css";
 import { FaSearch } from "react-icons/fa";
 import Carousel from './Carousel/carousel';
 import Card from "./Card/Card";
+import { Link, animateScroll } from 'react-scroll';
+
+
+const callCard = () => {
+  return (
+    <Card
+          title="College Courses"
+          url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTb-pGFkk0m-FQxmA6wOPXJWh47rBRWF_972Q&usqp=CAU"
+        />
+  );
+}
 
 function Home() {
   return (
@@ -25,12 +36,16 @@ function Home() {
           title="School Courses"
           url="/assets/images/kids.jpg"
         />
+        <Link to="coursesection" smooth={true} offset={-100} duration={1000}>
+
+        
+        </Link>
         <Card
           title="College Courses"
           url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTb-pGFkk0m-FQxmA6wOPXJWh47rBRWF_972Q&usqp=CAU"
-        />
+          />
       </div>
-      <Carousel></Carousel>
+      {/* <Carousel ></Carousel> */}
     </div>
   );
 }

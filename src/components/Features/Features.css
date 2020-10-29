@@ -1,11 +1,10 @@
 .features {
   width: 100%;
-  background-color: #1e1021;
+  /* background-color: #1e1021; */
   padding: 36px 120px;
 }
 
-.features > h2 {
-  color: #ffffff;
+.features > h1 {
   text-align: center;
   letter-spacing: 0.2rem;
   font-size: 1.8rem;
@@ -20,7 +19,6 @@
 
 .feature-content {
   margin-top: 24px;
-  color: #ffffff;
   line-height: 24px;
 }
 

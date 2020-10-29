@@ -5,8 +5,78 @@ import CourseHero from "./CourseHero";
 import { useState } from 'react'
 import { test2 } from '../../components/CourseCard/CourseCard';
 
+
+const getData = (test2,setData,Data) => {
+
+  switch (test2) {
+    case "C":
+      return setData = Data.C;
+      break;
+    case "CPP":
+      return setData = Data.CPP;
+      break;
+    case "Java":
+      return setData = Data.Java;
+      break;
+    case "Python":
+      return setData = Data.Python;
+      break;
+    case "Android":
+      return setData = Data.Android;
+      break;
+    case "FullStack":
+      return setData = Data.FullStack;
+      break;
+    case "Frontend":
+      return setData = Data.Frontend;
+      break;
+    case "Backend":
+      return setData = Data.Backend;
+      break;
+    case "DSA":
+      return setData = Data.DSA;
+      break;
+    case "SystemDesign":
+      return setData = Data.SystemDesign;
+      break;
+    default:
+      return setData;
+  }
+};
+
 const CourseDetails = () => {
   const Data = {
+    err: {
+      heroContent: {
+        headContent: " Most of the programming languages uses compiler written in C language and for the same reason it is known as mother language of all modern programming languages.  Let us begin the journey of the virtual world by learning ABC of programming languages and coding through C.",
+        courseHeading: "C",
+        image: " "
+      },
+      features: {
+        courseName: "C Programming",
+        feature1: "Top industries CTOs as mentors",
+        feature2: "Unparalleled personal attention",
+        feature3: "One stop school for tech leadership",
+        feature4: "Unlock endless possibilities"
+    },
+    skills: {
+      skill1: "git",
+      skill2: "JavaScript",
+      skill3: "MVC",
+      skill4: "Jira",
+      skill5: "Api",
+      skill6: "XYz",
+      
+      },
+      about: {
+        aboutContent: "The computer language that allows maximum control with minimal commands. Because of its flexibility and versatility, It is used in microcontroller, operating systems, drivers, kernels etc. It is a basic building block towards learning of logics behind any other language and make other languages easier to understand.Most of the programming languages uses compiler written in C language and for the same reason it is known as mother language of all modern programming languages. Even languages like C++,  Java, C# etc. use same syntax as of C.Let us begin the journey of the virtual world by learning ABC of programming languages and coding through C."
+      },
+      triCard: {
+        triCard1: "",
+        triCard2: "",
+        triCard3: ""
+      }
+    },
       C: {
         heroContent: {
           headContent: " Most of the programming languages uses compiler written in C language and for the same reason it is known as mother language of all modern programming languages.  Let us begin the journey of the virtual world by learning ABC of programming languages and coding through C.",
@@ -318,47 +388,43 @@ const CourseDetails = () => {
       }
 
   };
-  let setData = Data.C
+  let setData = Data.err;
+  //   = {
+  //   heroContent: {
+  //     headContent: " Most of the programming languages uses compiler written in C language and for the same reason it is known as mother language of all modern programming languages.  Let us begin the journey of the virtual world by learning ABC of programming languages and coding through C.",
+  //     courseHeading: "C",
+  //     image: " "
+  //   },
+  //   features: {
+  //     courseName: "C Programming",
+  //     feature1: "Top industries CTOs as mentors",
+  //     feature2: "Unparalleled personal attention",
+  //     feature3: "One stop school for tech leadership",
+  //     feature4: "Unlock endless possibilities"
+  //   },
+  //   skills: {
+  //     skill1: "git",
+  //     skill2: "JavaScript",
+  //     skill3: "MVC",
+  //     skill4: "Jira",
+  //     skill5: "Api",
+  //     skill6: "XYz",
+    
+  //   },
+  //   about: {
+  //     aboutContent: "The computer language that allows maximum control with minimal commands. Because of its flexibility and versatility, It is used in microcontroller, operating systems, drivers, kernels etc. It is a basic building block towards learning of logics behind any other language and make other languages easier to understand.Most of the programming languages uses compiler written in C language and for the same reason it is known as mother language of all modern programming languages. Even languages like C++,  Java, C# etc. use same syntax as of C.Let us begin the journey of the virtual world by learning ABC of programming languages and coding through C."
+  //   },
+  //   triCard: {
+  //     triCard1: "",
+  //     triCard2: "",
+  //     triCard3: ""
+  //   }
+  // };
  
-  const getData = (test2) => {
-
-    switch (test2) {
-      case "C":
-        return setData=Data.c
-        break;
-      case "CPP":
-        return setData = Data.CPP;
-        break;
-      case "Java":
-        return setData = Data.Java;
-        break;
-      case "Python":
-        return setData = Data.Python;
-        break;
-      case "Android":
-        return setData = Data.Android;
-        break;
-      case "FullStack":
-        return setData = Data.FullStack;
-        break;
-      case "Frontend":
-        return setData = Data.Frontend;
-        break;
-      case "Backend":
-        return setData = Data.Backend;
-        break;
-      case "DSA":
-        return setData = Data.DSA;
-        break;
-      case "SystemDesign":
-        return setData = Data.SystemDesign;
-      default:
-        return setData;
-        break;
-    }
-  }
+  
+  
  
-  const { heroContent, features, skills, about, triCard } = getData(test2);
+  const { heroContent, features, skills, about, triCard } = getData(test2,setData,Data);
   return (
     <div className="courseDetails">
       <CourseHero heroContent={heroContent} features={features} about={about} triCard={triCard} skill={skills}/>
