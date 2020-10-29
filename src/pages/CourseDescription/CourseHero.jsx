@@ -15,7 +15,7 @@ const CourseHero=(props)=> {
             <h1 className="text-white display-3">	&lt;{props.features.courseName}	/&nbsp;&gt;</h1>
           </div>
           <div className="heroContent col-xs-12 col-sm--12 col-md-7 col-lg-8">
-            <p className="text-white">{props.heroContent.headContent}</p>
+            <p className="text-white" style={{fontSize:"5px"}}>{props.heroContent.headContent}</p>
           </div>
           <div className="heroBtn col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row-reverse ">
             <Link to="signUp" smooth={true} offset={-100} duration={1000}>
