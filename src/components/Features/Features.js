@@ -13,6 +13,10 @@ function Features() {
           <h2 className="text-center">
             Learning academics
           </h2>
+          <center>
+          <img style={{justifyContent:"center"}} src="/assets/images/why1.png" alt="icons"/>
+          </center>
+          
           <Typography>
           gain mastery over markets that empowers people to be more self sufficient allowing the pursuit of a passionate, fulfilling and purpose driven life.
           </Typography>
@@ -21,6 +25,10 @@ function Features() {
           <h2 className="text-center">
             Live mentorship
           </h2>
+          <center>
+          <img style={{justifyContent:"center"}} src="/assets/images/why2.png" alt="icons"/>
+
+          </center>
         <Typography>
         accelerate your growth and achieve excellence with exclusive goLIVE training from a team of master educators committed to your success.
         </Typography>
@@ -45,6 +53,10 @@ function Features() {
           <h2 className="text-center">
             Startegies
           </h2>
+          <center>
+          <img style={{justifyContent:"center"}} src="/assets/images/why3.png" alt="icons"/>
+
+          </center>
           <Typography>
           expand your learning and mentorship with simple unique strategies that can make it much easier too
           </Typography>

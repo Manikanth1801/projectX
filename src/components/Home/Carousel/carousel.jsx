@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Carousel() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid my-5 mx-5">
       <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
     <div className="carousel-inner">
           <div className="carousel-item active">
@@ -24,7 +24,8 @@ export default function Carousel() {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="sr-only">Next</span>
   </a>
-</div>
+      </div>
+      <br/>
       
     </div>
   )

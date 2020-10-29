@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Carousel from "../../components/Home/Carousel/carousel";
 import Courses from "../Courses/Courses";
 
 const foundationCourses = [
@@ -54,6 +55,7 @@ const coreComputerScienceCourses = [
 function CourseSection() {
   return (
     <Fragment>
+      <Carousel></Carousel>
       <div className="foundationCourses">
       <Courses title="Foundation Courses"  sectionid={foundationCourses} courseList={foundationCourses} />
       </div>

@@ -45,7 +45,6 @@ function Home() {
           url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTb-pGFkk0m-FQxmA6wOPXJWh47rBRWF_972Q&usqp=CAU"
           />
       </div>
-      {/* <Carousel ></Carousel> */}
     </div>
   );
 }
