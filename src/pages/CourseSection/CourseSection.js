@@ -55,7 +55,9 @@ const coreComputerScienceCourses = [
 function CourseSection() {
   return (
     <Fragment>
+      <div className="container carouselDiv">
       <Carousel></Carousel>
+      </div>
       <div className="foundationCourses">
       <Courses title="Foundation Courses"  sectionid={foundationCourses} courseList={foundationCourses} />
       </div>

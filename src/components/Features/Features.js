@@ -17,7 +17,7 @@ function Features() {
           <img style={{justifyContent:"center"}} src="/assets/images/why1.png" alt="icons"/>
           </center>
           
-          <Typography>
+          <Typography align="center">
           gain mastery over markets that empowers people to be more self sufficient allowing the pursuit of a passionate, fulfilling and purpose driven life.
           </Typography>
         </Grid>
@@ -29,7 +29,7 @@ function Features() {
           <img style={{justifyContent:"center"}} src="/assets/images/why2.png" alt="icons"/>
 
           </center>
-        <Typography>
+        <Typography align='center'>
         accelerate your growth and achieve excellence with exclusive goLIVE training from a team of master educators committed to your success.
         </Typography>
           {/* <div className="feature-content">
@@ -57,7 +57,7 @@ function Features() {
           <img style={{justifyContent:"center"}} src="/assets/images/why3.png" alt="icons"/>
 
           </center>
-          <Typography>
+          <Typography align='center'>
           expand your learning and mentorship with simple unique strategies that can make it much easier too
           </Typography>
         </Grid>

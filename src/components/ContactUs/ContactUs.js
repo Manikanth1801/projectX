@@ -35,23 +35,27 @@ function ContactUs() {
         <div class="footer-center">
           <div className="footer-center-info">
             <FaMapMarker className="footer-center-icon" />
-            <p>
-              <span>Ambad link roda, nashik</span> Maharashtra 422010
-            </p>
+              <span>Ambad link roda, nashik</span>&nbsp; Maharashtra 422010
           </div>
 
           <div className="footer-center-info">
             <FaPhone className="footer-center-icon" />
-            <p>+91 7972902094</p>
+            <span>+91 7972902094</span>
           </div>
 
           <div className="footer-center-info">
             <FaEnvelope className="footer-center-icon" />
-            <p>
+            <span>
               <a href="mailto:support@company.com">support@proinsite.in</a>
-            </p>
+            </span>
           </div>
 
+          <div className="footer-center-info">
+            <FaEnvelope className="footer-center-icon" />
+            <span>
+              <a href="mailto:info@company.com">info@proinsite.in</a>
+            </span>
+          </div>
           
         </div>
 
@@ -59,12 +63,7 @@ function ContactUs() {
 
         <div class="footer-right">
 
-        <div className="footer-center-info">
-            <FaEnvelope className="footer-center-icon" />
-            <p>
-              <a href="mailto:info@company.com">info@proinsite.in</a>
-            </p>
-          </div>
+        
 
           <p class="footer-company-about">
             <span>About the company</span>

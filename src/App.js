@@ -33,13 +33,13 @@ const Error = () => {
   );
 
 }
-const CoursePageRender = () => {
-  return (
-    <div>
-      <CourseDetails ></CourseDetails>
-    </div>
-  );
-}
+// const CoursePageRender = () => {
+//   return (
+//     <div>
+//       <CourseDetails ></CourseDetails>
+//     </div>
+//   );
+// }
 
 function App() {
   return (

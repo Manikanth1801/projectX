@@ -12,14 +12,19 @@ const teams = [
 
   {
     url:
-      "cmo",
-    name: "Xyz Name",
+      "Reedam",
+    name: "Reedam Jain",
   },
 
   {
     url:
       "sachin",
     name: "Sachin Mali",
+  },
+  {
+    url:
+      "abhay",
+    name: "Abhay Pratap",
   }
 ];
 

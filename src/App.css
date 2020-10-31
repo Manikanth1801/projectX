@@ -39,5 +39,21 @@ p{
 }
 .carousel{
   width:200px;
+  /* height: 70vh; */
   border: 10px solid red;
 }
+
+/* .carouselDiv {
+  border: solid 1px #ff0000;
+  zoom: 1;  IE6&7 
+}
+
+.carouselDiv:before,
+.carouselDiv:after {
+  content: "";
+  display: table;
+}
+
+.carouselDiv:after {
+  clear: both;
+} */
