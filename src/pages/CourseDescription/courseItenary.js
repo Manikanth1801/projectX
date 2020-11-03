@@ -22,28 +22,47 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CourseItenary() {
+export default function CourseItenary(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-
+  // console.log(props.courseItenaryData, "+++++++++++++++++++++++++++++++++++++++++++here++++++++++++++");
   return (
     <div className={classes.root}>
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>Your Course Details</Typography>
-          <Typography className={classes.secondaryHeading}>Comming Soon</Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian1.head}</Typography>
+          <Typography className={classes.secondaryHeading}></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Comming Soon told so!
+          <ul style={{ paddingLeft: "7px" }}>
+            {/* {props.courseItenaryData.accordian1.map((data) => {
+              return (
+                  <li>
+                    {data}
+                  </li>
+              );
+            })} */}
+              <ol>
+                {props.courseItenaryData.accordian1.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian1.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian1.p3}                
+              </ol>
+              
+              </ul>
+            {/* use the below component to add the iTenary Table */}
           {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
@@ -54,46 +73,51 @@ export default function CourseItenary() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>Your Course Details</Typography>
-          <Typography className={classes.secondaryHeading}>
-            Comming Soon
-          </Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian2.head}</Typography>
+          <Typography className={classes.secondaryHeading}></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian2.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian2.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian2.p3}                
+              </ol>
+            </ul>
             {/* Comming Soon told so! */}
-            <ItenaryTables></ItenaryTables>
+            {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
       </Accordion>
-      {/* <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}>Advanced settings</Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian3.head}</Typography>
           <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <ItenaryTables></ItenaryTables>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography className={classes.heading}>Personal data</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          <ItenaryTables></ItenaryTables>
+          <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian3.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian3.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian3.p3}                
+              </ol>
+            </ul>
+          {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -103,12 +127,22 @@ export default function CourseItenary() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>General settings</Typography>
-          <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian4.head}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <ItenaryTables></ItenaryTables>
+          <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian4.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian4.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian4.p3}                
+              </ol>
+            </ul>
+          {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -118,16 +152,53 @@ export default function CourseItenary() {
           aria-controls="panel5bh-content"
           id="panel5bh-header"
         >
-          <Typography className={classes.heading}>General settings</Typography>
-          <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian5.head}</Typography>
+          <Typography className={classes.secondaryHeading}></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <ItenaryTables></ItenaryTables>
+          <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian5.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian5.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian5.p3}                
+              </ol>
+            </ul>
+          {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel6bh-content"
+          id="panel6bh-header"
+        >
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian6.head}</Typography>
+          <Typography className={classes.secondaryHeading}></Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian6.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian6.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian6.p3}                
+              </ol>
+            </ul>
+          {/* <ItenaryTables></ItenaryTables> */}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      {/* <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel6bh-content"
@@ -142,22 +213,33 @@ export default function CourseItenary() {
           <ItenaryTables></ItenaryTables>
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
       <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel7bh-content"
           id="panel7bh-header"
         >
-          <Typography className={classes.heading}>General settings</Typography>
-          <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+          <Typography className={classes.heading}>{props.courseItenaryData.accordian7.head}</Typography>
+          <Typography className={classes.secondaryHeading}></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <ItenaryTables></ItenaryTables>
+          <ul style={{paddingLeft:"7px"}}>
+            <ol>
+                {props.courseItenaryData.accordian7.p1}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian7.p2}
+              </ol>
+              <ol>
+                {props.courseItenaryData.accordian7.p3}                
+              </ol>
+            </ul>
+          {/* <ItenaryTables></ItenaryTables> */}
           </Typography>
         </AccordionDetails>
-      </Accordion> */}
+      </Accordion>
     </div>
   );
 }

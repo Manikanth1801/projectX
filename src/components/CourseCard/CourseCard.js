@@ -15,7 +15,7 @@ function CourseCard({ image, title, test }) {
     <div style={cardStyle} className="CourseCard">
       <img className="CourseCard-img" src={image} alt="image here" />
       <h3 className="CourseCard-title">{title}</h3>
-      <Link to="coursedescription" >
+      <Link to="coursedescription">
         <Button buttonStyle="btn--primary" buttonColor="primary" >
           <span onClick={() => {
             test2 = test;

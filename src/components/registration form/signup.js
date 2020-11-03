@@ -49,6 +49,16 @@ function Copyright() {
 //   },
 // ];
 
+// const [errorText,seterrorText]=useState()
+
+// onChange(event) {
+//   if (event.target.value.match(phoneRegex)) {
+//     this.setState({ errorText: '' })
+//   } else {
+//     this.setState({ errorText: 'Invalid format: ###-###-####' })
+//   }
+// }
+
 function sendEmail(e) {
   e.preventDefault();
   sendForm('gmail', 'template_444xazn', e.target, 'user_yZ4qx21CEABzeqlY3feB7')
@@ -174,7 +184,7 @@ export default function SignUp() {
                 label="get updates via email."
                 />
                 <p style={{fontWeight:"large"}}>
-                  Rs<del>5000000</del> Rs <strong>2500</strong> </p>
+                  Rs<del>5000</del> Rs <strong>2500</strong> </p>
             </Grid>
           </Grid>
           <Button

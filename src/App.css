@@ -37,11 +37,15 @@ p{
   border: 10px solid red;
 }
 }
-.carousel{
-  width:200px;
-  /* height: 70vh; */
-  border: 10px solid red;
-}
+  /* .carousel{
+    width:200px;
+    height: 70vh;
+    border: 10px solid red;
+  } */
+
+  .carousel{
+    padding-right: 7%;
+  }
 
 /* .carouselDiv {
   border: solid 1px #ff0000;

@@ -1,14 +1,27 @@
-import React, { Fragment } from 'react';
+import React, { useEffect,Fragment } from 'react';
 import SignUp from '../../components/registration form/signup';
 import BenifitCard from './BenifitCards';
 import CourseItenary from './courseItenary';
 import Box from '@material-ui/core/Box';
 import PriceCard from './PriceCard';
 import FeedbackCard from './feedbackCards';
-import{Link, animateScroll} from 'react-scroll'
+import { Link, animateScroll } from 'react-scroll'
 
-const CourseHero=(props)=> {
-    return (
+
+// const setItenaryData = (data) => {
+
+//   console.log(data, "!!!!!!!!");
+
+// }
+
+  
+
+const CourseHero = (props) => {
+  // setItenaryData(props.courseItenary);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+  return (
        <Fragment>
         <div className="coursedetailsHero container-fluid">
           <div className="container">
@@ -87,7 +100,7 @@ const CourseHero=(props)=> {
                 
               </div> */}
             </div>
-            <div className="row benifits my-5">
+            {/* <div className="row benifits my-5">
               <div className="col-sm-12 col-md-12 col-lg-12">
               <h3>
                 Benifits
@@ -97,14 +110,14 @@ const CourseHero=(props)=> {
               iure nam animi. Nemo, possimus quia.</p>
               </div>
               
-              {/* <div className="col-sm-12 col-md-3 col-lg-3 benifitCard">
+              <div className="col-sm-12 col-md-3 col-lg-3 benifitCard">
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
               </div>
               <div className="col-sm-12 col-md-3 col-lg-3  benifitCard">
-              </div> */}
+              </div>
               
               <BenifitCard ></BenifitCard>
 
@@ -115,7 +128,7 @@ const CourseHero=(props)=> {
               <BenifitCard ></BenifitCard>
 
               
-            </div>
+            </div> */}
 
             <div className="aboutCourse ">
               <div className="row">
@@ -126,7 +139,7 @@ const CourseHero=(props)=> {
                   {props.about.aboutContent}
                   </p>
                   <div className="courseItenary">
-                    <CourseItenary></CourseItenary>
+                    <CourseItenary courseItenaryData={props.courseItenary}></CourseItenary>
                   </div>
                   
                  
