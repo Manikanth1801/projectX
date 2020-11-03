@@ -54,7 +54,7 @@ const coreComputerScienceCourses = [
 
 function CourseSection() {
   return (
-    <Fragment>
+    <Fragment className="my-4">
       <div className="container carouselDiv">
       <Carousel></Carousel>
       </div>

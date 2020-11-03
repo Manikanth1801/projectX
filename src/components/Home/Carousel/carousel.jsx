@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Carousel() {
   return (
-    <div className="container-fluid my-5 mx-5">
+    <div className="container-fluid ">
 
-<div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+<div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel" style={{paddingLeft:"0", paddingRight:"0"}}>
   <div className="carousel-inner">
     <div className="carousel-item active">
             <img src="https://picsum.photos/1200/500" className="d-block w-100" alt="..."/>

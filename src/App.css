@@ -43,9 +43,31 @@ p{
     border: 10px solid red;
   } */
 
-  .carousel{
+  /* .carousel{
     padding-right: 7%;
   }
+  @media screen and(max-width:550px){
+    .carouselDiv {
+      border: 10px solid red;
+      margin-left: -80px !important;
+        }
+  } */
+  /* .carouselDiv img{
+    width: 100% !important ;
+      }
+  @media screen and (max-width:550px){
+    .carouselDiv img{
+      border: 10px solid crimson;
+      margin-left:-80px !important;
+      width: 250px !important;    
+      height: 200px;  
+      margin-right: 90px;
+    }
+    .carouselDiv{
+      margin:;
+        }
+  } */
+
 
 /* .carouselDiv {
   border: solid 1px #ff0000;
