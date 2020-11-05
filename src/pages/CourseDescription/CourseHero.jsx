@@ -145,7 +145,7 @@ const CourseHero = (props) => {
                  
                 </div>
                 <div className="col-sm-12 col-md-4 col-lg-4 " id="signUp" >
-                  <SignUp ></SignUp>
+                  <SignUp courseName={props.features.courseName} ></SignUp>
                 </div>
               </div>
             </div>
