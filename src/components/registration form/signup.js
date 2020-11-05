@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUp() {
+export default function SignUp(props) {
 
   
   const classes = useStyles();
@@ -170,7 +170,11 @@ export default function SignUp() {
               </Grid>
               
               <Grid item xs={12}>
-              <TextField id="standard-basic" label="Course Name" fullWidth name="course" required/>
+                <TextField id="standard-basic" label="Course Name" fullWidth name="course" required defaultValue={props.courseName}
+                  InputProps={{
+                    readOnly: true,
+                  }}
+                />
 
               </Grid>
               <Grid item xs={12}>
