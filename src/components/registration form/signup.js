@@ -61,7 +61,7 @@ function Copyright() {
 
 function sendEmail(e) {
   e.preventDefault();
-  sendForm('gmail', 'template_444xazn', e.target, 'user_yZ4qx21CEABzeqlY3feB7')
+  sendForm('ProinsiteCourses', 'template_3f24dvb', e.target, 'user_8mLdlHVZYw9FBdReeyhy1')
     .then((result) => {
       console.log(result.text);
     }, (error) => {
